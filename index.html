@@ -3,6 +3,10 @@
 <head>
     <title>sam</title>
     <style>
+        html {
+            overflow: hidden;
+            height: 100%;
+        }
 
         @keyframes animatedBackground {
             from {
@@ -15,8 +19,9 @@
         }
 
         body {
-            width: 100vh;
-            height: 100vw;
+            height: 100%;
+            width: 100%;
+            overflow: auto;
             background-image: url('bg.jpeg');
             background-position: center;
             animation: animatedBackground 100s linear infinite;
